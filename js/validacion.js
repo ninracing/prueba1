@@ -24,6 +24,7 @@ function permitirEnvio(){
 
 // funcion que comprueba todos los parametros introducidos por el usuario, llamando a distintas funciones
 function validar(){
+	comprobarNombre();
 	comprobarCorreo();
 	comprobarAlias();
 	comprobarContrasena();
@@ -42,6 +43,23 @@ function mostrarError(id,idError,error){
 function mostrarValido(id,idError){
 	document.getElementById(id).style.backgroundColor = "PaleGreen"; 
 	document.getElementById(idError).innerHTML="";  
+};
+
+function comprobarNombre(){
+	var id = "nombreUsuario";
+	var idError= "error-nombreUsuario"
+	var error= "Error: caracteres insuficientes en el campo nombre, introduzca tres o más."
+	frase=document.getElementById(id).value;
+	var letra= frase.substr(2,1);
+	var letras="abcdefghyjklmnñopqrstuvwxyz";
+   	letra = letra.toLowerCase();
+   	if (letras.indexOf(letra)==0){
+        mostrarError(id,idError,error);
+        return false;
+    }
+  	else {
+  		mostrarValido(id,idError);
+	}	
 };
 
 // funcion que hace comprobaciones en el campo email
