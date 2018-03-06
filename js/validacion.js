@@ -26,6 +26,7 @@ function permitirEnvio(){
 function validar(){
 	comprobarNombre();
 	comprobarApellido1();
+	comprobarApellido2();
 	comprobarCorreo();
 	comprobarAlias();
 	comprobarContrasena();
@@ -68,6 +69,24 @@ function comprobarApellido1(){
 	var id = "apellidoUsuario1";
 	var idError= "error-apellidoUsuario1"
 	var error= "Error: caracteres insuficientes en el campo primer apellido, introduzca tres o más."
+	frase=document.getElementById(id).value;
+	var letra= frase.substr(2,1);
+	var letras="abcdefghyjklmnñopqrstuvwxyz";
+   	letra = letra.toLowerCase();
+   	if (letras.indexOf(letra)==0){
+        mostrarError(id,idError,error);
+        return false;
+    }
+  	else {
+  		mostrarValido(id,idError);
+	}	
+};
+
+// funcion que comprueba que el usuario haya introducido 3 caracteres o mas en el segundo apellido
+function comprobarApellido2(){
+	var id = "apellidoUsuario2";
+	var idError= "error-apellidoUsuario2"
+	var error= "Error: caracteres insuficientes en el campo segundo apellido, introduzca tres o más."
 	frase=document.getElementById(id).value;
 	var letra= frase.substr(2,1);
 	var letras="abcdefghyjklmnñopqrstuvwxyz";
