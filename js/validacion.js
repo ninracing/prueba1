@@ -51,7 +51,7 @@ function comprobarNombre(){
 	var id = "nombreUsuario";
 	var idError= "error-nombreUsuario"
 	var error= "Error: caracteres insuficientes en el campo nombre, introduzca tres o más."
-	frase=document.getElementById(id).value;
+	var frase=document.getElementById(id).value;
 	var letra= frase.substr(2,1);
 	var letras="abcdefghyjklmnñopqrstuvwxyz";
    	letra = letra.toLowerCase();
@@ -69,7 +69,7 @@ function comprobarApellido1(){
 	var id = "apellidoUsuario1";
 	var idError= "error-apellidoUsuario1"
 	var error= "Error: caracteres insuficientes en el campo primer apellido, introduzca tres o más."
-	frase=document.getElementById(id).value;
+	var frase=document.getElementById(id).value;
 	var letra= frase.substr(2,1);
 	var letras="abcdefghyjklmnñopqrstuvwxyz";
    	letra = letra.toLowerCase();
@@ -87,7 +87,7 @@ function comprobarApellido2(){
 	var id = "apellidoUsuario2";
 	var idError= "error-apellidoUsuario2"
 	var error= "Error: caracteres insuficientes en el campo segundo apellido, introduzca tres o más."
-	frase=document.getElementById(id).value;
+	var frase=document.getElementById(id).value;
 	var letra= frase.substr(2,1);
 	var letras="abcdefghyjklmnñopqrstuvwxyz";
    	letra = letra.toLowerCase();
