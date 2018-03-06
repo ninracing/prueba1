@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Tu Periódico Nacional</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="David Mateos">
+	<meta name="description" content="Registro en Periódico Nacional">
+	<meta name="keywords" content="registro,Periódico Nacional">	
+	<script type="text/javascript" src="js/validacion.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilos1.css">
+</head>
+<body>
+	
+	<header>
+		<h1>Periódico Nacional</h1>
+	</header>
+	
+	<section>
+		<h2>Registrese en nuestro periódico</h2>
+		<form id="formAlta" action="#" method="get" name="formulario1" onsubmit="return false">
+			<fieldset>
+				<legend>DATOS DE REGISTRO</legend>
+
+				<p><label for="nombreUsuario">Nombre:</label>
+				<input type="text" name="nombreUsuario" id="nombreUsuario" size="30" maxlength="25"/></p>
+				<p id="error-nombreUsuario" class="error"></p>
+				
+				<p><label for="correo">E-mail:</label></p>
+				<p><input type="email" name="correo" id="correo" size="50" required></p>
+				<p id="error-correo" class="error"></p>
+				
+				<p><label for="alias">Alias*:</label></p>
+				<p><input type="text" name="alias" id="alias" size="50" maxlength="25"/></p>
+				<p id="error-alias" class="error"></p>
+				<p>*El nombre que aparecerá si deja sus comentarios en elEconomista.es y Ecotrader</p>
+
+				<p><label for="contrasena1">Contraseña:</label></p>
+				<p><input type="password" name="contrasena1" id="contrasena1" size="50" maxlength="25"/></p>
+				<p id="error-contrasena1" class="error"></p>
+
+				<p><label for="contrasena2">Repetir contraseña:</label></p>
+				<p><input type="password" name="contrasena2" id="contrasena2" size="50" maxlength="25"/></p>
+				<p id="error-contrasena2" class="error"></p>
+
+			</fieldset>
+
+			<fieldset >
+				<legend>RECORDATORIO CONTRASEÑA</legend>
+			
+				<p><select name="pregunta" id="pregunta">
+					<option value="0">Selecciona una pregunta</option>
+					<option value="1">¿Cómo se llama tu abuela materna?</option>
+					<option value="2">¿Tu fecha de nacimiento?</option>
+					<option value="3">¿Tu color favorito?</option>
+					<option value="4">¿Tu DNI?</option>
+					<option value="5">¿Cual es tu numero de telefono movil?</option>
+					<option value="6">¿Cual es tu numero de telefono de empresa?</option>
+				</select></p>
+				<p id="error-pregunta" class="error"></p>
+					
+				<p><label for="respuesta">Respuesta:</label></p>
+				<p><input type="text" name="respuesta" id="respuesta" size="50" minlength="8" maxlength="50"/></p>
+				<p id="error-respuesta" class="error"></p>
+			
+			</fieldset>
+
+			<p><label for="aceptacion">Acepto la <a href="html/1.html">política de privacidad</a> y las <a href="html/2.html">condiciones de promoción</a></label><input type="checkbox" id="aceptacion" value="aceptacion"></p>
+			
+			<input type="submit"  value="Enviar" id="boton-envio" disabled/>
+				
+		</form>
+		
+		
+	</section>
+	
+	<footer>
+		
+		<ul>
+			<li>Aviso Legal</li>
+    		<li>Contacto</li>
+    		<li>Donde estamos</li>
+		</ul>
+		
+		<p>&copy; 2018 Todos los Derechos Reservados</p>
+
+	</footer>
+
+</body>
+</html>

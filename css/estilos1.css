@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee|Satisfy');
+    
+*{
+	font-family: 'Handlee', cursive;
+  text-align: center;
+}
+
+body{
+  margin: 0px;
+}
+
+header	{
+	background:linear-gradient(to bottom right, white 10%, #f0f0f5 60%);
+  margin: 0;
+  padding: 1em 0;
+}
+
+header h1{
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+	font-size: 3rem;
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+section{
+  padding: 2em 0;
+  background-color: #f0f0f5;
+
+}
+
+/*estilos para la zona de formulario*/
+input{
+  text-align: left;
+  background-color: #f0f0f5;
+}
+
+select{
+  background-color: #f0f0f5;
+}
+
+input:focus{
+  background-color: white;
+  border: .2em dotted black;
+  border-radius: .3em;
+}
+
+form{
+  width: 80%;
+  margin:3rem auto;
+}
+ 
+form p, legend{
+  text-align: left;
+}
+
+form legend{
+  border: .2em solid black;
+  border-radius: .5em;
+  background: white;
+}
+
+form fieldset{
+  margin-top: 2em;
+  background-color: white;
+}
+
+
+/*estilos para la zona de footer*/
+footer{
+  background-image: url("../images/fondo-footer.jpg");
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+
+}
+
+footer ul,p{
+   list-style-type: none;
+   background-color:rgba(255,255,255,0.8);
+}
+
+
+
+
